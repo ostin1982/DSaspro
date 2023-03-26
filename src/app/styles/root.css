@@ -1,0 +1,18 @@
+:root {
+  --font-sans: "inter", sans-serif;
+  --color-sheme: dark;
+  --color-base-black: #000;
+  --color-base-white: #fff;
+}
+
+:root.dark {
+  --color-base-black: #fff;
+  --color-base-white: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-base-black: #fff;
+    --color-base-white: #000;
+  }
+}
