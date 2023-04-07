@@ -9,7 +9,11 @@
     "preview": "vite preview",
     "prepare": "husky install",
     "lint:js": "eslint ./src",
-    "lint:css": "stylelint \"**/*.css\""
+    "lint:css": "stylelint \"**/*.css\"",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@sentry/react": "^7.47.0",
@@ -36,6 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "@vitejs/plugin-react": "^3.1.0",
+    "@vitest/ui": "^0.29.8",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.8.0",
@@ -51,6 +56,7 @@
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^31.0.0",
     "typescript": "^4.9.3",
-    "vite": "^4.2.0"
+    "vite": "^4.2.0",
+    "vitest": "^0.29.8"
   }
 }

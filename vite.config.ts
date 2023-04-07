@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
@@ -15,5 +15,8 @@ export default defineConfig({
       generateScopedName: "[folder]--[local]-[hash:base64:5]",
       localsConvention: "camelCase",
     },
+  },
+  test: {
+    includeSource: ["src/**/*.{ts}"],
   },
 });
