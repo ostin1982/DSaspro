@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import "@/shared/lib/sentry";
+
 import { App } from "@/app";
 import { configure } from "./shared/api";
 
