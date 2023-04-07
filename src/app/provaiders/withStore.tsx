@@ -1,6 +1,8 @@
 import { ReactNode, createContext, useContext } from "react";
 import { configure } from "mobx";
 
+import { store } from "@/entities";
+
 configure({
   enforceActions: "always",
   computedRequiresReaction: true,
@@ -8,8 +10,6 @@ configure({
   observableRequiresReaction: true,
   disableErrorBoundaries: true,
 });
-
-const store = {};
 
 const RootStoreContext = createContext<typeof store>(store);
 
