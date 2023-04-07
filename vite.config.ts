@@ -16,7 +16,16 @@ export default defineConfig({
       localsConvention: "camelCase",
     },
   },
+  define: {
+    "import.meta.vitest": "undefined",
+  },
   test: {
-    includeSource: ["src/**/*.{ts}"],
+    includeSource: ["src/**/*.{ts,tsx}"],
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./src/shared/lib/testing-library",
+    // you might want to disable it, if you don't have tests that rely on CSS
+    // since parsing CSS is slow
+    css: true,
   },
 });
