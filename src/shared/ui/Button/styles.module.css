@@ -9,9 +9,7 @@
   background: var(--color-primary-600);
   box-shadow: var(--shadow-xs);
   color: var(--color-base-white);
-  font-size: var(--font-main);
-  font-weight: 600;
-  line-height: 24px;
+  font: var(--font-main-big);
 }
 
 .root:hover {

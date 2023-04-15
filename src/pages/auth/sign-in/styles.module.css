@@ -46,15 +46,12 @@
 
 .title {
   color: var(--color-gray-900);
-  font-size: var(--font-big);
-  font-weight: 600;
-  line-height: 32px;
+  font: var(--font-big);
 }
 
 .subtitle {
   color: var(--color-gray-600);
-  font-size: var(--font-main);
-  line-height: 24px;
+  font: var(--font-main);
 }
 
 .form {

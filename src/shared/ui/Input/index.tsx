@@ -19,13 +19,13 @@ export const Input: FC<Props> = ({
   children,
 }) => {
   return (
-    <label className={styles.label}>
+    <label className={cn(styles.label, className)}>
       <span className={styles.span}>{children}</span>
       <input
         type={type}
         name={name}
         placeholder={placeholder}
-        className={cn(styles.input, className)}
+        className={styles.input}
       />
     </label>
   );

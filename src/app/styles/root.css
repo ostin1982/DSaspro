@@ -12,8 +12,10 @@
   --color-gray-700: #344054;
   --color-gray-900: #101828;
   --shadow-xs: 0px 1px 2px rgb(16 24 40 / 5%);
-  --font-big: 24px;
-  --font-main: 16px;
+  --font-big: 600 24px/32px var(--font-sans);
+  --font-main: 400 16px/24px var(--font-sans);
+  --font-main-big: 600 16px/24px var(--font-sans);
+  --font-small: 500 14px/20px var(--font-sans);
 }
 
 :root.dark {
