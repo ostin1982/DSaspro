@@ -8,9 +8,7 @@
 
 .span {
   color: var(--color-gray-700);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
+  font: var(--font-small);
 }
 
 .input {
@@ -27,12 +25,10 @@
 
 .input::placeholder {
   color: var(--color-gray-500);
-  font-size: var(--font-main);
-  line-height: 24px;
+  font: var(--font-main);
 }
 
 .input[type="email"] {
   color: var(--color-gray-500);
-  font-size: var(--font-main);
-  line-height: 24px;
+  font: var(--font-main);
 }
