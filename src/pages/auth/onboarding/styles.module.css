@@ -51,3 +51,19 @@
   justify-content: space-between;
   gap: 24px;
 }
+
+@media (min-width: 768px) {
+  .root {
+    width: 512px;
+    margin: 0 auto;
+  }
+
+  .module {
+    gap: 20px;
+  }
+
+  .fields {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
