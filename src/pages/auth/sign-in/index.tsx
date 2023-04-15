@@ -1,12 +1,12 @@
 import { FC } from "react";
 import cn from "classnames";
 
+import { Logo } from "@/shared/ui/Logo";
 import { Button } from "@/shared/ui/Button";
 import { Input } from "@/shared/ui/Input";
 
 import patternSvg from "./pattern.svg";
 import patternSvg768 from "./pattern-768.svg";
-import logoSvg from "./logo.svg";
 import mailIconSvg from "./mailIcon.svg";
 import styles from "./styles.module.css";
 
@@ -29,10 +29,7 @@ const SignInPage: FC<Props> = ({ className }) => {
           </picture>
         </section>
         <section className={styles.container}>
-          <div className={styles.logo}>
-            <img src={logoSvg} alt="logo" className={styles.logoSvg} />
-            <p className={styles.name}>DSAspro</p>
-          </div>
+          <Logo>DSAspro</Logo>
           <div className={styles.module}>
             <div className={styles.info}>
               <h1 className={styles.title}>Sign in</h1>
