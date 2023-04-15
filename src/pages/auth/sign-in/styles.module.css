@@ -26,10 +26,6 @@
   margin-left: 16px;
 }
 
-.name {
-  display: none;
-}
-
 .module {
   display: flex;
   width: 100%;
@@ -93,20 +89,6 @@
     justify-content: space-between;
     padding: 32px;
     margin: 0;
-  }
-
-  .logo {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-  }
-
-  .name {
-    display: block;
-    color: var(--color-base-black);
-    font: var(--font-logo);
   }
 
   .module {
