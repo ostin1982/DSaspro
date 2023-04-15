@@ -39,7 +39,7 @@ const SignInPage: FC<Props> = ({ className }) => {
               <Input type="email" name="email" placeholder="Enter your email">
                 Email
               </Input>
-              <Button>Get started</Button>
+              <Button type="button">Get started</Button>
             </form>
           </div>
           <div className={styles.footer}>
