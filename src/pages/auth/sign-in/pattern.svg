@@ -1,0 +1,45 @@
+<svg width="750" height="62" viewBox="0 0 750 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_337_3)">
+<rect width="62.5" height="62.5" fill="#84ADFF"/>
+<path d="M0 31.25H31.25C31.25 48.5089 17.2589 62.5 0 62.5V31.25Z" fill="white"/>
+<path d="M31.311 0C48.5699 0 62.561 13.9911 62.561 31.25H31.311V0Z" fill="#004EEB"/>
+<rect width="62.5" height="62.5" transform="translate(62.5)" fill="white"/>
+<path d="M125.061 31.25H93.811C93.811 48.5089 107.802 62.5 125.061 62.5V31.25Z" fill="#2970FF"/>
+<path d="M93.811 0C111.07 0 125.061 13.9911 125.061 31.25H93.811V0Z" fill="#004EEB"/>
+<rect width="62.5" height="62.5" transform="translate(125)" fill="#B2DDFF"/>
+<ellipse cx="156.189" cy="31.25" rx="15.625" ry="15.625" fill="white"/>
+<path d="M187.5 62.5H125L156.25 31.25L187.5 62.5Z" fill="#004EEB"/>
+<rect width="62.5" height="62.5" transform="translate(187.5)" fill="white"/>
+<rect x="218.811" y="31.25" width="31.25" height="31.25" fill="#2970FF"/>
+<rect x="187.5" width="31.25" height="31.25" fill="#B2DDFF"/>
+<rect width="62.5" height="62.5" transform="translate(250)" fill="#B2DDFF"/>
+<path d="M312.5 0V62.5H250L312.5 0Z" fill="#004EEB"/>
+<circle cx="281.189" cy="31.25" r="15.625" fill="white"/>
+<rect width="62.5" height="62.5" transform="translate(312.5)" fill="white"/>
+<path d="M343.811 31.25H375.061L343.811 62.5V31.25Z" fill="#2970FF"/>
+<path d="M343.75 0V31.25H312.5L343.75 0Z" fill="#2970FF"/>
+<rect width="62.5" height="62.5" transform="translate(375)" fill="white"/>
+<path d="M437.5 62.5C420.241 62.5 406.25 48.5089 406.25 31.25C406.25 13.9911 420.241 0 437.5 0V62.5Z" fill="#004EEB"/>
+<circle cx="390.625" cy="31.25" r="15.625" fill="#84ADFF"/>
+<rect width="62.5" height="62.5" transform="translate(437.5)" fill="#B2DDFF"/>
+<path d="M468.75 31.25L468.75 0L500 31.25L468.75 31.25Z" fill="white"/>
+<path d="M437.5 31.25L468.75 31.25L468.75 62.5L437.5 31.25Z" fill="#2970FF"/>
+<rect width="62.5" height="62.5" transform="translate(500)" fill="#84ADFF"/>
+<path d="M500 62.5C517.259 62.5 531.25 48.5089 531.25 31.25C531.25 13.9911 517.259 0 500 0V62.5Z" fill="#004EEB"/>
+<path d="M562.5 -3.27333e-06L562.5 62.5L531.25 31.25L562.5 -3.27333e-06Z" fill="white"/>
+<rect width="62.5" height="62.5" transform="translate(562.5)" fill="white"/>
+<path d="M562.5 -1.90735e-06L625 -4.63931e-06L625 62.5L562.5 -1.90735e-06Z" fill="#2970FF"/>
+<circle cx="593.75" cy="31.25" r="15.625" fill="#004EEB"/>
+<rect width="62.5" height="62.5" transform="translate(625)" fill="#84ADFF"/>
+<path d="M656.25 62.5C638.991 62.5 625 48.5089 625 31.25C625 13.9911 638.991 0 656.25 0V62.5Z" fill="#004EEB"/>
+<circle cx="656.25" cy="31.25" r="15.625" fill="white"/>
+<rect width="62.5" height="62.5" transform="translate(687.5)" fill="#B2DDFF"/>
+<path d="M718.75 31.25H750C750 48.5089 736.009 62.5 718.75 62.5V31.25Z" fill="#2970FF"/>
+<path d="M718.75 31.25C701.491 31.25 687.5 45.2411 687.5 62.5H718.75V31.25Z" fill="#004EEB"/>
+</g>
+<defs>
+<clipPath id="clip0_337_3">
+<rect width="750" height="62" fill="white"/>
+</clipPath>
+</defs>
+</svg>
