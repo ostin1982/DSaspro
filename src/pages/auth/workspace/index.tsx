@@ -4,7 +4,7 @@ import cn from "classnames";
 import { Input } from "@/shared/ui/Input";
 import { Button } from "@/shared/ui/Button";
 
-import cloudskSvg from "./clouds.svg";
+import cloudsSvg from "./clouds.svg";
 import facebookSvg from "./facebook.svg";
 import twitterSvg from "./twitter.svg";
 import styles from "./styles.module.css";
@@ -13,7 +13,7 @@ interface Props {
   className?: string;
 }
 
-const WorkpacePage: FC<Props> = ({ className }) => {
+const WorkspacePage: FC<Props> = ({ className }) => {
   return (
     <>
       <main className={cn(styles.root, className)}>
@@ -25,26 +25,30 @@ const WorkpacePage: FC<Props> = ({ className }) => {
               chat.
             </p>
             <div className={styles.box}>
-              <img src={cloudskSvg} alt="dialog icon" />
+              <img src={cloudsSvg} alt="dialog icon" />
               <div className={styles.block}>
                 <h3 className={styles.contact}>Chat to us</h3>
                 <p className={styles.help}>
                   Our friendly team is here to help.
                 </p>
-                <a href="mailto: hi@dsaspro.com" className={styles.email}>
+                <a href="mailto:hi@dsaspro.com" className={styles.email}>
                   hi@dsaspro.com
                 </a>
               </div>
             </div>
           </div>
-          <div className={styles.links}>
-            <a href="facebook.com">
-              <img src={facebookSvg} alt="logo facebook" />
-            </a>
-            <a href="twitter.com">
-              <img src={twitterSvg} alt="logo twitter" />
-            </a>
-          </div>
+          <ul className={styles.links}>
+            <li>
+              <a href="https://facebook.com">
+                <img src={facebookSvg} alt="logo facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com">
+                <img src={twitterSvg} alt="logo twitter" />
+              </a>
+            </li>
+          </ul>
         </div>
         <div className={styles.blockright}>
           <div className={styles.module}>
@@ -78,4 +82,4 @@ const WorkpacePage: FC<Props> = ({ className }) => {
   );
 };
 
-export default WorkpacePage;
+export default WorkspacePage;

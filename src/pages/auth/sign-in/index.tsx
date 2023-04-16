@@ -46,7 +46,7 @@ const SignInPage: FC<Props> = ({ className }) => {
             <p className={styles.text}>© DSAspro 2023</p>
             <div className={styles.mail}>
               <img src={mailIconSvg} alt="letter icon" />
-              <a href="mailto: help@dsaspro.com" className={styles.help}>
+              <a href="mailto:help@dsaspro.com" className={styles.help}>
                 help@dsaspro.com
               </a>
             </div>
