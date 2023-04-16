@@ -110,6 +110,10 @@
   color: var(--color-gray-700);
 }
 
+.white:hover {
+  background: var(--color-gray-50);
+}
+
 .start {
   display: flex;
   flex-direction: column;
@@ -125,6 +129,7 @@
   border: 8px solid var(--color-primary-50);
   border-radius: 28px;
   background: var(--color-primary-100);
+  cursor: pointer;
 }
 
 .startup {
@@ -214,6 +219,7 @@
     height: 40px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
   .user {
@@ -224,6 +230,7 @@
     justify-content: center;
     border-radius: 50%;
     background: var(--color-gray-100);
+    cursor: pointer;
   }
 
   .main {
