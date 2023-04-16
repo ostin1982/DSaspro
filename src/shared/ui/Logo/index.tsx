@@ -12,9 +12,9 @@ interface Props {
 
 export const Logo: FC<Props> = ({ className, children }) => {
   return (
-    <div className={cn(styles.logo, className)}>
+    <div className={styles.logo}>
       <img src={logoSvg} alt="logo" className={styles.logoSvg} />
-      <p className={styles.name}>{children}</p>
+      <p className={cn(styles.name, className)}>{children}</p>
     </div>
   );
 };

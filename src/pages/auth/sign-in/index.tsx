@@ -29,7 +29,9 @@ const SignInPage: FC<Props> = ({ className }) => {
           </picture>
         </section>
         <section className={styles.container}>
-          <Logo>DSAspro</Logo>
+          <div className={styles.logomark}>
+            <Logo className={styles.name}>DSAspro</Logo>
+          </div>
           <div className={styles.module}>
             <div className={styles.info}>
               <h1 className={styles.title}>Sign in</h1>

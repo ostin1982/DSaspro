@@ -10,6 +10,7 @@
   box-shadow: var(--shadow-xs);
   color: var(--color-base-white);
   font: var(--font-main-big);
+  gap: 8px;
 }
 
 .root:hover {
