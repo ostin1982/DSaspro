@@ -114,6 +114,11 @@
   background: var(--color-gray-50);
 }
 
+.gear {
+  min-width: 20px;
+  min-height: 20px;
+}
+
 .start {
   display: flex;
   flex-direction: column;

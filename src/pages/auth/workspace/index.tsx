@@ -3,10 +3,8 @@ import cn from "classnames";
 
 import { Input } from "@/shared/ui/Input";
 import { Button } from "@/shared/ui/Button";
+import { Clouds, Facebook, Twitter } from "@/shared/ui/Icon";
 
-import cloudsSvg from "./clouds.svg";
-import facebookSvg from "./facebook.svg";
-import twitterSvg from "./twitter.svg";
 import styles from "./styles.module.css";
 
 interface Props {
@@ -25,7 +23,7 @@ const WorkspacePage: FC<Props> = ({ className }) => {
               chat.
             </p>
             <div className={styles.box}>
-              <img src={cloudsSvg} alt="dialog icon" />
+              <Clouds />
               <div className={styles.block}>
                 <h3 className={styles.contact}>Chat to us</h3>
                 <p className={styles.help}>
@@ -40,12 +38,12 @@ const WorkspacePage: FC<Props> = ({ className }) => {
           <ul className={styles.links}>
             <li>
               <a href="https://facebook.com">
-                <img src={facebookSvg} alt="logo facebook" />
+                <Facebook />
               </a>
             </li>
             <li>
               <a href="https://twitter.com">
-                <img src={twitterSvg} alt="logo twitter" />
+                <Twitter />
               </a>
             </li>
           </ul>

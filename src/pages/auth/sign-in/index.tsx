@@ -4,10 +4,10 @@ import cn from "classnames";
 import { Logo } from "@/shared/ui/Logo";
 import { Button } from "@/shared/ui/Button";
 import { Input } from "@/shared/ui/Input";
+import { MailIcon } from "@/shared/ui/Icon";
 
 import patternSvg from "./pattern.svg";
 import patternSvg768 from "./pattern-768.svg";
-import mailIconSvg from "./mailIcon.svg";
 import styles from "./styles.module.css";
 
 interface Props {
@@ -47,7 +47,7 @@ const SignInPage: FC<Props> = ({ className }) => {
           <div className={styles.footer}>
             <p className={styles.text}>© DSAspro 2023</p>
             <div className={styles.mail}>
-              <img src={mailIconSvg} alt="letter icon" />
+              <MailIcon />
               <a href="mailto:help@dsaspro.com" className={styles.help}>
                 help@dsaspro.com
               </a>
