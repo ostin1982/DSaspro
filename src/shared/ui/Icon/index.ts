@@ -10,6 +10,7 @@ import { ReactComponent as MailIcon } from "./mailIcon.svg";
 import { ReactComponent as PlusBlue } from "./plus-blue.svg";
 import { ReactComponent as PlusCircle } from "./plus-circle.svg";
 import { ReactComponent as PlusWhite } from "./plus-white.svg";
+import { ReactComponent as SearchBlueIcon } from "./search-blue.svg";
 import { ReactComponent as SearchIcon } from "./search.svg";
 import { ReactComponent as Twitter } from "./twitter.svg";
 import { ReactComponent as UserIcon } from "./user.svg";
@@ -28,6 +29,7 @@ export {
   PlusBlue,
   PlusCircle,
   PlusWhite,
+  SearchBlueIcon,
   SearchIcon,
   Twitter,
   UserIcon,
