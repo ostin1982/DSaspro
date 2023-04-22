@@ -4,6 +4,7 @@ import cn from "classnames";
 import { Input } from "@/shared/ui/Input";
 import { Button } from "@/shared/ui/Button";
 import { Clouds, Facebook, Twitter } from "@/shared/ui/Icon";
+import { Head } from "@/shared/ui/Head";
 
 import styles from "./styles.module.css";
 
@@ -14,6 +15,9 @@ interface Props {
 const WorkspacePage: FC<Props> = ({ className }) => {
   return (
     <>
+      <Head>
+        <title>DSAspro: a brand new task management tool — WorkSpace</title>
+      </Head>
       <main className={cn(styles.root, className)}>
         <div className={styles.blockleft}>
           <div className={styles.communication}>

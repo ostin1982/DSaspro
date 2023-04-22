@@ -5,6 +5,7 @@ import { Logo } from "@/shared/ui/Logo";
 import { Button } from "@/shared/ui/Button";
 import { Input } from "@/shared/ui/Input";
 import { MailIcon } from "@/shared/ui/Icon";
+import { Head } from "@/shared/ui/Head";
 
 import patternSvg from "./pattern.svg";
 import patternSvg768 from "./pattern-768.svg";
@@ -17,6 +18,9 @@ interface Props {
 const SignInPage: FC<Props> = ({ className }) => {
   return (
     <>
+      <Head>
+        <title>DSAspro: a brand new task management tool — Sign - In</title>
+      </Head>
       <main className={cn(styles.root, className)}>
         <section className={styles.pattern}>
           <picture>
