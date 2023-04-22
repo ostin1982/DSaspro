@@ -3,7 +3,7 @@ import cn from "classnames";
 
 import { Logo } from "@/shared/ui/Logo";
 import { Button } from "@/shared/ui/Button";
-import { Input } from "@/shared/ui/Input";
+import { Label } from "@/shared/ui/Label";
 import { MailIcon } from "@/shared/ui/Icon";
 import { Head } from "@/shared/ui/Head";
 
@@ -42,9 +42,9 @@ const SignInPage: FC<Props> = ({ className }) => {
               <p className={styles.subtitle}>Start your 30-day free trial.</p>
             </div>
             <form action="#" className={styles.form}>
-              <Input type="email" name="email" placeholder="Enter your email">
+              <Label type="email" name="email" placeholder="Enter your email">
                 Email
-              </Input>
+              </Label>
               <Button type="button">Get started</Button>
             </form>
           </div>

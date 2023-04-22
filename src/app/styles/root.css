@@ -3,10 +3,12 @@
   --color-sheme: dark;
   --color-base-black: #000;
   --color-base-white: #fff;
+  --color-blue-500: #2e90fa;
   --color-primary-50: #eff4ff;
   --color-primary-100: #d1e9ff;
   --color-primary-600: #155eef;
   --color-primary-700: #004eeb;
+  --color-gray-25: #fcfcfd;
   --color-gray-50: #f9fafb;
   --color-gray-100: #f2f4f7;
   --color-gray-200: #eaecf0;
@@ -22,6 +24,8 @@
   --font-display-xs-semibold: 600 24px/32px var(--font-sans);
   --font-text-xl-semibold: 600 20px/30px var(--font-sans);
   --font-text-xl-medium: 500 20px/30px var(--font-sans);
+  --font-text-lg-semibold: 600 18px/28px var(--font-sans);
+  --font-text-lg-medium: 500 18px/28px var(--font-sans);
   --font-text-lg-regular: 400 18px/28px var(--font-sans);
   --font-main: 400 16px/24px var(--font-sans);
   --font-main-big: 600 16px/24px var(--font-sans);

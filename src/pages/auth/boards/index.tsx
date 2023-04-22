@@ -1,8 +1,10 @@
 import { FC } from "react";
 import cn from "classnames";
 
+import { Head } from "@/shared/ui/Head";
 import { Logo } from "@/shared/ui/Logo";
 import { Button } from "@/shared/ui/Button";
+import { Input } from "@/shared/ui/Input";
 import {
   Bell,
   Burger,
@@ -10,7 +12,9 @@ import {
   Gear,
   LayersTwo,
   PlusBlue,
+  PlusCircle,
   PlusWhite,
+  SearchIcon,
   UserIcon,
   UsersIcon,
 } from "@/shared/ui/Icon";
@@ -24,6 +28,9 @@ interface Props {
 const BoardsPage: FC<Props> = ({ className }) => {
   return (
     <>
+      <Head>
+        <title>DSAspro: a brand new task management tool — Boards</title>
+      </Head>
       <header className={cn(styles.header, className)}>
         <div className={styles.container}>
           <div className={styles.module}>
@@ -92,6 +99,52 @@ const BoardsPage: FC<Props> = ({ className }) => {
               <PlusWhite />
               New board
             </Button>
+          </section>
+          <section className={styles.boards}>
+            <div className={styles.box}>
+              <h2 className={styles.heading}>Boards</h2>
+              <Input
+                type="email"
+                name="email"
+                placeholder="Search"
+                className={styles.input}
+              >
+                <SearchIcon />
+              </Input>
+            </div>
+            <div className={styles.whiteboard}>
+              <div className={styles.cardPlus}>
+                <div className={styles.append}>
+                  <PlusCircle />
+                  <p className={styles.wording}>Create new board</p>
+                </div>
+              </div>
+              <div className={styles.card}>
+                <p className={styles.sprint}>
+                  Sprint #3 (03.04.2023 - 10.04.2023)
+                </p>
+              </div>
+              <div className={styles.card}>
+                <p className={styles.sprint}>
+                  Sprint #3 (03.04.2023 - 10.04.2023)
+                </p>
+              </div>
+              <div className={styles.card}>
+                <p className={styles.sprint}>
+                  Sprint #3 (03.04.2023 - 10.04.2023)
+                </p>
+              </div>
+              <div className={styles.card}>
+                <p className={styles.sprint}>
+                  Sprint #3 (03.04.2023 - 10.04.2023)
+                </p>
+              </div>
+              <div className={styles.card}>
+                <p className={styles.sprint}>
+                  Sprint #3 (03.04.2023 - 10.04.2023)
+                </p>
+              </div>
+            </div>
           </section>
         </div>
       </main>
