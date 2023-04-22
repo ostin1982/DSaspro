@@ -316,6 +316,21 @@
     width: 352px;
     margin: 0 auto;
   }
+
+  .box {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+
+  .input {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .whiteboard {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 1440px) {
