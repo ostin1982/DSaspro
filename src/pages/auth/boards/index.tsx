@@ -14,6 +14,7 @@ import {
   PlusBlue,
   PlusCircle,
   PlusWhite,
+  SearchBlueIcon,
   SearchIcon,
   UserIcon,
   UsersIcon,
@@ -112,38 +113,55 @@ const BoardsPage: FC<Props> = ({ className }) => {
                 <SearchIcon />
               </Input>
             </div>
-            <div className={styles.whiteboard}>
-              <div className={styles.cardPlus}>
-                <div className={styles.append}>
-                  <PlusCircle />
-                  <p className={styles.wording}>Create new board</p>
-                </div>
+          </section>
+          <section className={styles.whiteboard}>
+            <div className={styles.cardPlus}>
+              <div className={styles.append}>
+                <PlusCircle />
+                <p className={styles.wording}>Create new board</p>
               </div>
-              <div className={styles.card}>
-                <p className={styles.sprint}>
-                  Sprint #3 (03.04.2023 - 10.04.2023)
-                </p>
-              </div>
-              <div className={styles.card}>
-                <p className={styles.sprint}>
-                  Sprint #3 (03.04.2023 - 10.04.2023)
-                </p>
-              </div>
-              <div className={styles.card}>
-                <p className={styles.sprint}>
-                  Sprint #3 (03.04.2023 - 10.04.2023)
-                </p>
-              </div>
-              <div className={styles.card}>
-                <p className={styles.sprint}>
-                  Sprint #3 (03.04.2023 - 10.04.2023)
-                </p>
-              </div>
-              <div className={styles.card}>
-                <p className={styles.sprint}>
-                  Sprint #3 (03.04.2023 - 10.04.2023)
-                </p>
-              </div>
+            </div>
+            <div className={styles.card}>
+              <p className={styles.sprint}>
+                Sprint #3 (03.04.2023 - 10.04.2023)
+              </p>
+            </div>
+            <div className={styles.card}>
+              <p className={styles.sprint}>
+                Sprint #3 (03.04.2023 - 10.04.2023)
+              </p>
+            </div>
+            <div className={styles.card}>
+              <p className={styles.sprint}>
+                Sprint #3 (03.04.2023 - 10.04.2023)
+              </p>
+            </div>
+            <div className={styles.card}>
+              <p className={styles.sprint}>
+                Sprint #3 (03.04.2023 - 10.04.2023)
+              </p>
+            </div>
+            <div className={styles.card}>
+              <p className={styles.sprint}>
+                Sprint #3 (03.04.2023 - 10.04.2023)
+              </p>
+            </div>
+          </section>
+          <section className={styles.start}>
+            <button className={styles.plus}>
+              <SearchBlueIcon />
+            </button>
+            <p className={styles.startup}>No boards found</p>
+            <p className={styles.text}>
+              Your search “Board name” did not match any boards. Please try
+              again.
+            </p>
+            <div className={styles.buttonBox}>
+              <Button className={styles.buttonWhite}>Clear search</Button>
+              <Button className={styles.button}>
+                <PlusWhite />
+                New board
+              </Button>
             </div>
           </section>
         </div>
