@@ -3,50 +3,52 @@ import cn from "classnames";
 
 import { Logo } from "@/shared/ui/Logo";
 import { Button } from "@/shared/ui/Button";
+import {
+  Bell,
+  Burger,
+  Customers,
+  Gear,
+  LayersTwo,
+  PlusBlue,
+  PlusWhite,
+  UserIcon,
+  UsersIcon,
+} from "@/shared/ui/Icon";
 
-import burgerSvg from "./burger.svg";
-import gearSvg from "./gear.svg";
-import usersSvg from "./users.svg";
-import plusSvg from "./plus.svg";
-import plusWhiteSvg from "./plus-white.svg";
-import layersSvg from "./layers-two.svg";
-import userSvg from "./user.svg";
-import bellSvg from "./bell.svg";
-import customersSvg from "./customers.svg";
 import styles from "./styles.module.css";
 
 interface Props {
-  classNames?: string;
+  className?: string;
 }
 
-const BoardsPage: FC<Props> = ({ classNames }) => {
+const BoardsPage: FC<Props> = ({ className }) => {
   return (
     <>
-      <header className={styles.header}>
+      <header className={cn(styles.header, className)}>
         <div className={styles.container}>
           <div className={styles.module}>
             <div className={styles.blockleft}>
               <Logo className={styles.logo}>DSAspro</Logo>
               <nav className={styles.panel}>
                 <a href="/" className={styles.info}>
-                  <img src={layersSvg} alt="" />
+                  <LayersTwo />
                   <span className={styles.span}>Boards</span>
                 </a>
                 <a href="/" className={styles.infowhite}>
-                  <img src={userSvg} alt="" />
+                  <UserIcon />
                   <span className={styles.span}>Members</span>
                 </a>
               </nav>
             </div>
             <div className={styles.blockright}>
               <a href="/" className={styles.burger}>
-                <img src={burgerSvg} alt="the icon that opens the menu" />
+                <Burger />
               </a>
               <div className={styles.ring}>
-                <img src={bellSvg} alt="" />
+                <Bell />
               </div>
               <div className={styles.user}>
-                <img src={customersSvg} alt="" />
+                <Customers />
               </div>
             </div>
           </div>
@@ -60,7 +62,7 @@ const BoardsPage: FC<Props> = ({ classNames }) => {
                 <p className={styles.abbreviation}>JU</p>
               </div>
               <div className={styles.caption}>
-                <h1 className={styles.title}>Junior Frontend Mentorship</h1>
+                <p className={styles.title}>Junior Frontend Mentorship</p>
                 <a href="/" className={styles.subtitle}>
                   Private
                 </a>
@@ -68,18 +70,18 @@ const BoardsPage: FC<Props> = ({ classNames }) => {
             </div>
             <div className={styles.block}>
               <Button className={styles.white}>
-                <img src={gearSvg} alt="icon gear wheel" />
+                <Gear className={styles.gear} />
                 Settings
               </Button>
               <Button>
-                <img src={usersSvg} alt="icon users plus" />
+                <UsersIcon />
                 Invite members
               </Button>
             </div>
           </section>
           <section className={styles.start}>
             <button className={styles.plus}>
-              <img src={plusSvg} alt="" />
+              <PlusBlue />
             </button>
             <p className={styles.startup}>Start by creating a board</p>
             <p className={styles.text}>
@@ -87,7 +89,7 @@ const BoardsPage: FC<Props> = ({ classNames }) => {
               board»
             </p>
             <Button className={styles.button}>
-              <img src={plusWhiteSvg} alt="" />
+              <PlusWhite />
               New board
             </Button>
           </section>

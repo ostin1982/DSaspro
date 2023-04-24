@@ -1,8 +1,7 @@
 import { FC, ReactNode } from "react";
 import cn from "classnames";
 
-import logoSvg from "./logo.svg";
-
+import { LogoIcon } from "../Icon";
 import styles from "./styles.module.css";
 
 interface Props {
@@ -13,7 +12,7 @@ interface Props {
 export const Logo: FC<Props> = ({ className, children }) => {
   return (
     <div className={styles.logo}>
-      <img src={logoSvg} alt="logo" className={styles.logoSvg} />
+      <LogoIcon className={styles.logoSvg} />
       <p className={cn(styles.name, className)}>{children}</p>
     </div>
   );
