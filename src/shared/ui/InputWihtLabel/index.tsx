@@ -11,7 +11,7 @@ interface Props {
   children: ReactNode;
 }
 
-export const Input: FC<Props> = ({
+export const InputWithLabel: FC<Props> = ({
   className,
   placeholder,
   type,

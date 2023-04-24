@@ -11,7 +11,7 @@ interface Props {
   children: ReactNode;
 }
 
-export const Label: FC<Props> = ({
+export const InputWithIcon: FC<Props> = ({
   className,
   placeholder,
   type,
