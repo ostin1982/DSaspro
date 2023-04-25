@@ -2,6 +2,7 @@ import { FC, ReactNode } from "react";
 import cn from "classnames";
 
 import styles from "./styles.module.css";
+import { Input } from "../Input";
 
 interface Props {
   className?: string;
@@ -21,7 +22,7 @@ export const InputWithLabel: FC<Props> = ({
   return (
     <label className={cn(styles.label, className)}>
       <span className={styles.span}>{children}</span>
-      <input
+      <Input
         type={type}
         name={name}
         placeholder={placeholder}

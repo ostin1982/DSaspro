@@ -1,32 +1,32 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import cn from "classnames";
 
 import styles from "./styles.module.css";
+import { Input } from "../Input";
+import { SearchIcon } from "../Icon";
 
 interface Props {
   className?: string;
   name?: string;
   placeholder?: string;
   type?: "email" | "text";
-  children: ReactNode;
 }
 
 export const InputWithIcon: FC<Props> = ({
-  className,
   placeholder,
   type,
   name,
-  children,
+  className,
 }) => {
   return (
-    <label className={cn(styles.label, className)}>
-      <span className={styles.span}>{children}</span>
-      <input
+    <div className={cn(styles.wrapper, className)}>
+      <Input
         type={type}
         name={name}
         placeholder={placeholder}
         className={styles.input}
       />
-    </label>
+      <SearchIcon className={styles.icon} />
+    </div>
   );
 };
