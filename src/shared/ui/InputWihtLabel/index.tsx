@@ -1,15 +1,15 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import cn from "classnames";
 
 import styles from "./styles.module.css";
 import { Input } from "../Input";
 
 interface Props {
+  label: string;
   className?: string;
   name?: string;
   placeholder?: string;
   type?: "email" | "text";
-  children: ReactNode;
 }
 
 export const InputWithLabel: FC<Props> = ({
@@ -17,11 +17,11 @@ export const InputWithLabel: FC<Props> = ({
   placeholder,
   type,
   name,
-  children,
+  label,
 }) => {
   return (
     <label className={cn(styles.label, className)}>
-      <span className={styles.span}>{children}</span>
+      {label}
       <Input
         type={type}
         name={name}

@@ -66,9 +66,8 @@ const WorkspacePage: FC<Props> = ({ className }) => {
                 type="text"
                 name="name"
                 placeholder="Your Company Co."
-              >
-                Workspace name
-              </InputWithLabel>
+                label="Workspace name"
+              />
               <label className={styles.label}>
                 <span className={styles.span}>Description</span>
                 <textarea

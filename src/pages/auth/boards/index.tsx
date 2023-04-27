@@ -15,6 +15,7 @@ import {
   PlusCircle,
   PlusWhite,
   SearchBlueIcon,
+  SearchIcon,
   UserIcon,
   UsersIcon,
 } from "@/shared/ui/Icon";
@@ -108,6 +109,7 @@ const BoardsPage: FC<Props> = ({ className }) => {
                 name="email"
                 placeholder="Search"
                 className={styles.input}
+                icon={<SearchIcon className={styles.icon} />}
               />
             </div>
           </section>

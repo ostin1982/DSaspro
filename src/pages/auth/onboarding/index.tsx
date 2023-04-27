@@ -24,12 +24,18 @@ const OnbordingPage: FC<Props> = ({ className }) => {
         </div>
         <form action="" className={styles.form}>
           <div className={styles.fields}>
-            <InputWithLabel type="text" name="name" placeholder="First name">
-              First name
-            </InputWithLabel>
-            <InputWithLabel type="text" name="surname" placeholder="Last name">
-              Last name
-            </InputWithLabel>
+            <InputWithLabel
+              type="text"
+              name="name"
+              placeholder="First name"
+              label="First name"
+            />
+            <InputWithLabel
+              type="text"
+              name="surname"
+              placeholder="Last name"
+              label="Last name"
+            />
           </div>
           <Button type="button" className={styles.button}>
             Continue

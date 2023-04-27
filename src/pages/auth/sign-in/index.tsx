@@ -46,9 +46,8 @@ const SignInPage: FC<Props> = ({ className }) => {
                 type="email"
                 name="email"
                 placeholder="Enter your email"
-              >
-                Email
-              </InputWithLabel>
+                label="Email"
+              />
               <Button type="button">Get started</Button>
             </form>
           </div>
