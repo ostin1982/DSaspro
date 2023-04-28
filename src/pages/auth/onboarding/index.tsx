@@ -2,7 +2,7 @@ import { FC } from "react";
 import cn from "classnames";
 
 import styles from "./styles.module.css";
-import { Input } from "@/shared/ui/Input";
+import { InputWithLabel } from "@/shared/ui/InputWihtLabel";
 import { Button } from "@/shared/ui/Button";
 
 interface Props {
@@ -24,12 +24,18 @@ const OnbordingPage: FC<Props> = ({ className }) => {
         </div>
         <form action="" className={styles.form}>
           <div className={styles.fields}>
-            <Input type="text" name="name" placeholder="First name">
-              First name
-            </Input>
-            <Input type="text" name="surname" placeholder="Last name">
-              Last name
-            </Input>
+            <InputWithLabel
+              type="text"
+              name="name"
+              placeholder="First name"
+              label="First name"
+            />
+            <InputWithLabel
+              type="text"
+              name="surname"
+              placeholder="Last name"
+              label="Last name"
+            />
           </div>
           <Button type="button" className={styles.button}>
             Continue

@@ -1,12 +1,11 @@
 import { FC } from "react";
 import cn from "classnames";
 
-import { Input } from "@/shared/ui/Input";
+import { InputWithLabel } from "@/shared/ui/InputWihtLabel";
 import { Button } from "@/shared/ui/Button";
+import { Clouds, Facebook, Twitter } from "@/shared/ui/Icon";
+import { Head } from "@/shared/ui/Head";
 
-import cloudsSvg from "./clouds.svg";
-import facebookSvg from "./facebook.svg";
-import twitterSvg from "./twitter.svg";
 import styles from "./styles.module.css";
 
 interface Props {
@@ -16,6 +15,9 @@ interface Props {
 const WorkspacePage: FC<Props> = ({ className }) => {
   return (
     <>
+      <Head>
+        <title>DSAspro: a brand new task management tool — WorkSpace</title>
+      </Head>
       <main className={cn(styles.root, className)}>
         <div className={styles.blockleft}>
           <div className={styles.communication}>
@@ -25,7 +27,7 @@ const WorkspacePage: FC<Props> = ({ className }) => {
               chat.
             </p>
             <div className={styles.box}>
-              <img src={cloudsSvg} alt="dialog icon" />
+              <Clouds />
               <div className={styles.block}>
                 <h3 className={styles.contact}>Chat to us</h3>
                 <p className={styles.help}>
@@ -40,12 +42,12 @@ const WorkspacePage: FC<Props> = ({ className }) => {
           <ul className={styles.links}>
             <li>
               <a href="https://facebook.com">
-                <img src={facebookSvg} alt="logo facebook" />
+                <Facebook />
               </a>
             </li>
             <li>
               <a href="https://twitter.com">
-                <img src={twitterSvg} alt="logo twitter" />
+                <Twitter />
               </a>
             </li>
           </ul>
@@ -60,9 +62,12 @@ const WorkspacePage: FC<Props> = ({ className }) => {
           </div>
           <form action="" className={styles.form}>
             <div className={styles.fields}>
-              <Input type="text" name="name" placeholder="Your Company Co.">
-                Workspace name
-              </Input>
+              <InputWithLabel
+                type="text"
+                name="name"
+                placeholder="Your Company Co."
+                label="Workspace name"
+              />
               <label className={styles.label}>
                 <span className={styles.span}>Description</span>
                 <textarea

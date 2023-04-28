@@ -1,23 +1,8 @@
-.label {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 6px;
-}
-
-.span {
-  color: var(--color-gray-700);
-  font: var(--font-small);
-}
-
 .input {
   display: flex;
   width: 100%;
   flex-direction: row;
   align-items: center;
-  padding: 10px 14px;
   border: 1px solid var(--color-gray-300);
   border-radius: 8px;
   background: var(--color-base-white);
