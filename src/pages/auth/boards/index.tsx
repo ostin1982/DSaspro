@@ -4,7 +4,7 @@ import cn from "classnames";
 import { Head } from "@/shared/ui/Head";
 import { Logo } from "@/shared/ui/Logo";
 import { Button } from "@/shared/ui/Button";
-import { Input } from "@/shared/ui/Input";
+import { InputWithIcon } from "@/shared/ui/InputWithIcon";
 import {
   Bell,
   Burger,
@@ -104,14 +104,13 @@ const BoardsPage: FC<Props> = ({ className }) => {
           <section className={styles.boards}>
             <div className={styles.box}>
               <h2 className={styles.heading}>Boards</h2>
-              <Input
+              <InputWithIcon
                 type="email"
                 name="email"
                 placeholder="Search"
                 className={styles.input}
-              >
-                <SearchIcon />
-              </Input>
+                icon={<SearchIcon className={styles.icon} />}
+              />
             </div>
           </section>
           <section className={styles.whiteboard}>

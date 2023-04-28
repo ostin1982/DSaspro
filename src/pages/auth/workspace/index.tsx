@@ -1,7 +1,7 @@
 import { FC } from "react";
 import cn from "classnames";
 
-import { Label } from "@/shared/ui/Label";
+import { InputWithLabel } from "@/shared/ui/InputWihtLabel";
 import { Button } from "@/shared/ui/Button";
 import { Clouds, Facebook, Twitter } from "@/shared/ui/Icon";
 import { Head } from "@/shared/ui/Head";
@@ -62,9 +62,12 @@ const WorkspacePage: FC<Props> = ({ className }) => {
           </div>
           <form action="" className={styles.form}>
             <div className={styles.fields}>
-              <Label type="text" name="name" placeholder="Your Company Co.">
-                Workspace name
-              </Label>
+              <InputWithLabel
+                type="text"
+                name="name"
+                placeholder="Your Company Co."
+                label="Workspace name"
+              />
               <label className={styles.label}>
                 <span className={styles.span}>Description</span>
                 <textarea
