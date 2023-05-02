@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.name {
+  display: block;
+  color: var(--color-base-black);
+  font: var(--font-logo);
+}

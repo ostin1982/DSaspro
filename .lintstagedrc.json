@@ -1,0 +1,14 @@
+{
+  "**/*.{js,ts,tsx}": [
+    "eslint --fix",
+    "prettier --write",
+    "git add .",
+    "pnpm run lint:js"
+  ],
+  "**/*.{css}": [
+    "stylelint --fix",
+    "prettier --write",
+    "git add .",
+    "pnpm run lint:css"
+  ]
+}
