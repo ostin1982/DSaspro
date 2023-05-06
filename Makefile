@@ -21,3 +21,6 @@ supabase-db-diff:
 
 supabase-new-migration:
 	supabase migration new $(name)
+
+supabase-gen-types:
+	supabase gen types typescript --project-id qrwpebanuhwjconwtokw --schema public > ./src/shared/api/types_db.ts
