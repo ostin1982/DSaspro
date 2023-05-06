@@ -2,7 +2,7 @@ start:
 	pnpm dev
 
 supabase-start:
-	supabase start
+	supabase start --ignore-health-check
 
 supabase-stop:
 	supabase stop
